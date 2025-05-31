@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-light {
+    background-color: #04386A !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#logo {
+    width: 140px;
+    height: 50px;
+}
+
+#container-photo {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.508)), url("Imagem/fundo\ tela\ principal\ portas\ \(1\).jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#container-title-photo {
+    background-color: rgba(0, 33, 71, 0.637);
+    /* Azul escuro com 80% de opacidade */
+    width: 70%;
+    height: 15%;
+    text-align: center;
+    align-content: center;
+    z-index: 1;
+    position: relative;
+    top: 60%;
+    border-radius: 5px;
+}
+
+#container-title-photo h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+
+}
+
+.navbar-toggler {
+    border: none !important;
+    /* Remove a borda */
+    box-shadow: none !important;
+    /* Remove sombra ao clicar */
+}
+
+.container-titles {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.container-titles h1 {
+    color: #04386A;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.container-doors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.container-doors img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.container-doors h1 {
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 576px) {
+    .container-titles h1 {
+        font-size: 180%;
+    }
+
+
+    #container-title-photo h1 {
+        font-size: 200%;
+    }
+
+    .container-doors img {
+        height: 300px;
+        width: 200px;
+    }
+
+    .container-doors h1 {
+        font-size: 100%;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+    }
+
+    #container-title-photo {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-doors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #container-title-photo {
+        width: 40%;
+    }
+
+    #container-photo {
+        height: 630px;
+    }
+
+    .container-doors img {
+        height: 300px;
+    }
+
+    .container-doors h1 {
+        font-size: 80%;
+    }
+}
+
+/* Modal tela cheia */
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar o modal com classe ativa */
+.custom-modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* Imagem com transição suave de zoom */
+.custom-modal-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+/* Quando o modal está visível, escala a imagem */
+.custom-modal.show .custom-modal-img {
+    transform: scale(2);
+}
+
+/* Botão de fechar */
+.custom-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.3s ease;
+}
+
+.custom-close:hover {
+    color: #ccc;
+}
