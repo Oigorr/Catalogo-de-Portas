@@ -32,13 +32,12 @@ body {
 #container-photo {
     width: 100%;
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.508)), url("Imagem/fundo\ tela\ principal\ portas\ \(1\).jpg");
-
+    background-image: url(Imagem/fundo\ tela.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
+
 
 #container-title-photo {
     background-color: rgba(0, 33, 71, 0.637);
@@ -46,7 +45,7 @@ body {
     width: 70%;
     height: 15%;
     text-align: center;
-    align-content: center;
+    align-content: center; 
     z-index: 1;
     position: relative;
     top: 60%;
@@ -57,6 +56,7 @@ body {
     color: white;
     font-weight: bold;
     font-size: 130%;
+    margin: 0;
 
 }
 
@@ -225,3 +225,31 @@ body {
 .custom-close:hover {
     color: #ccc;
 }
+
+.navbar-toggler {
+    border: none !important;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6l18 18M6 24L24 6'/%3e%3c/svg%3e");
+    transform: rotate(180deg);
+}
+
+
+.container-doors img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-doors .sub-container:hover img {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 33, 71, 0.6);
+}
+
+
+
