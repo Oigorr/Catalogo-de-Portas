@@ -241,7 +241,7 @@ body {
     transform: rotate(180deg);
 }
 
-
+/* animação imagem de portas */
 .container-doors img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
