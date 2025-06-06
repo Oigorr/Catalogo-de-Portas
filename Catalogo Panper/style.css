@@ -41,24 +41,26 @@ body {
 
 #container-title-photo {
     background-color: rgba(0, 33, 71, 0.637);
-    /* Azul escuro com 80% de opacidade */
     width: 70%;
     height: 15%;
-    text-align: center;
-    align-content: center;
-    z-index: 1;
     position: relative;
     top: 60%;
     border-radius: 5px;
+
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    text-align: center;
 }
+
 
 #container-title-photo h1 {
     color: white;
     font-weight: bold;
     font-size: 130%;
     margin: 0;
-
 }
+
 
 .navbar-toggler {
     border: none !important;
