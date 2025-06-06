@@ -45,7 +45,7 @@ body {
     width: 70%;
     height: 15%;
     text-align: center;
-    align-content: center; 
+    align-content: center;
     z-index: 1;
     position: relative;
     top: 60%;
@@ -76,6 +76,28 @@ body {
     color: #04386A;
     font-weight: bold;
     font-size: 150%;
+}
+
+#aviso {
+    background-color: #04386A;
+    color: white;
+
+}
+
+#aviso h1 {
+    font-size: 80%;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#aviso p {
+    font-size: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .container-doors {
@@ -170,6 +192,14 @@ body {
     .container-doors h1 {
         font-size: 80%;
     }
+
+    #aviso h1 {
+        font-size: 120%;
+    }
+
+    #aviso p {
+        font-size: 100%;
+    }
 }
 
 /* Modal tela cheia */
@@ -206,7 +236,7 @@ body {
 
 /* Quando o modal está visível, escala a imagem */
 .custom-modal.show .custom-modal-img {
-    transform: scale(2);
+    transform: scale(0.9);
 }
 
 /* Botão de fechar */
@@ -250,6 +280,3 @@ body {
     transform: translateY(-10px);
     box-shadow: 10px 10px 20px rgba(0, 33, 71, 0.6);
 }
-
-
-
