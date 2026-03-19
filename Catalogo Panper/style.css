@@ -133,12 +133,17 @@ body {
 }
 
 
-
 .container-doors h1 {
     text-align: center;
     font-size: 70%;
     font-weight: bold;
 }
+.menos-zoom {
+    object-fit: cover !important; /* Mantém preenchendo tudo como as outras */
+    object-position: top !important; /* Força a imagem a alinhar pelo topo, mostrando o "respiro" */
+
+}
+
 
 @media screen and (min-width: 576px) {
     .container-titles h1 {
